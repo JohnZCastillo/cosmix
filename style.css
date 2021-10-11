@@ -1,0 +1,94 @@
+
+/*-------- Global ------- */
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 2000px;
+}
+/*---------- end --------------*/
+
+/*-------- Navigation ------- */
+
+header{
+    height: 650px;
+    background-image: url('/images/Slider/03.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.nav_burger{
+    
+    width: 40px;
+    height:40px;
+    padding: .2em;
+    border: 1px solid white;
+    border-radius: .2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5em; 
+}
+.burger_line{
+    height: 2px;
+    background-color: white;
+}
+
+/* nav_lists is the ul inside nav*/
+/* top position is modified in index.js file*/
+.nav_lists{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    background-color: inherit;
+    color: white;
+    transition: height 500ms;    
+    overflow: hidden;
+}
+.nav_lists > li{
+    list-style: none;
+}
+.nav_lists > li > a{
+    text-decoration: none;
+}
+/*-------- end ------- */
+
+/*-------- Helper class ------- */
+.hide{
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+}
+.pointer{
+    cursor: pointer!important;
+}
+.container{
+    width: 100vw;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.background-onscroll{
+    background-color: black;
+    opacity: 80%;
+}
+
+/*-------- end ------- */
