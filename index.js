@@ -40,7 +40,7 @@ navList.style.top = navBar.offsetHeight + 'px';
 // 650 is the height of the header 
 // -439 is the top position of the navigation bar while 
 // navigation list is open just the touching 
-// touchiing the  bottom edge of the header 
+// the  bottom edge of the header 
 
 const header = this.document.getElementsByTagName('header')[0];
 window.addEventListener('scroll',function(){
@@ -54,3 +54,5 @@ window.addEventListener('scroll',function(){
     }
 })
 //-------------------- end -----------------------------------
+
+console.log(navList.offsetHeight);

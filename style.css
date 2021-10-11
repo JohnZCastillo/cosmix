@@ -57,11 +57,11 @@ header{
     flex-direction: column;
     gap: .5em;
     position: absolute;
-    height: 200px;
+    height: 250px;
     width: 100%;
     background-color: inherit;
     color: white;
-    transition: height 500ms;    
+    transition: height 300ms;  
     overflow: hidden;
 }
 .nav_lists > li{
